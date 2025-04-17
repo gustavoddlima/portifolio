@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gustavo Durães de Lima - Técnico em Informática especializado em manutenção de computadores, configuração de redes e desenvolvimento front-end. Serviços profissionais em Minas Gerais.">
+    <meta name="keywords" content="técnico informática, manutenção computadores, configuração redes, desenvolvimento web, suporte técnico, Minas Gerais">
+    <meta name="author" content="Gustavo Durães de Lima">
+    <meta property="og:title" content="Gustavo Durães de Lima | Técnico em Informática">
+    <meta property="og:description" content="Soluções técnicas completas para seu computador, rede e desenvolvimento web básico.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="canonical" href="https://seudominio.com.br">
+    <title>Gustavo Durães de Lima | Técnico em Informática - Manutenção e Redes</title>
+    
+    <style>
+        :root {
+            --win11-bg: #000000;
+            --win11-primary: #0067c0;
+            --win11-secondary: #0078d7;
+            --win11-accent: #4f9fe8;
+            --win11-text: #ffffff;
+            --win11-card: rgba(32, 32, 32, 0.8);
+            --win11-border: rgba(255, 255, 255, 0.1);
+            --win11-glass: rgba(32, 32, 32, 0.6);
+            --win11-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --win11-radius: 8px;
+            --win11-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: var(--win11-bg) url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==') fixed;
+            color: var(--win11-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        header {
+            background: linear-gradient(135deg, rgba(0, 103, 192, 0.2) 0%, rgba(0, 120, 215, 0.15) 100%);
+            color: var(--win11-text);
+            text-align: center;
+            padding: 8rem 2rem 6rem;
+            position: relative;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--win11-border);
+        }
+        
+        header h1 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        header h2 {
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
+            margin-bottom: 1.5rem;
+            color: var(--win11-accent);
+            font-weight: 500;
+        }
+        
+        header p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #25D366;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--win11-radius);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: var(--win11-transition);
+            margin-top: 1rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .whatsapp-btn:hover, .whatsapp-btn:focus {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--win11-glass);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--win11-border);
+            box-shadow: var(--win11-shadow);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        nav ul li a {
+            color: var(--win11-text);
+            padding: 0.5rem 1.2rem;
+            border-radius: var(--win11-radius);
+            transition: var(--win11-transition);
+            font-weight: 500;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        nav ul li a:hover, nav ul li a:focus {
+            background: rgba(255, 255, 255, 0.1);
+            opacity: 1;
+            outline: none;
+        }
+        
+        nav ul li a.active {
+            background: rgba(255, 255, 255, 0.2);
+            opacity: 1;
+            font-weight: 600;
+        }
+        
+        section {
+            padding: 5rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            scroll-margin-top: 80px;
+        }
+        
+        section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.2rem);
+            margin-bottom: 2.5rem;
+            color: var(--win11-text);
+            text-align: center;
+            position: relative;
+            font-weight: 500;
+        }
+        
+        section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--win11-primary), var(--win11-accent));
+            margin: 1rem auto;
+            border-radius: 3px;
+        }
+        
+        #sobre p {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        .habilidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .habilidade-categoria {
+            background: var(--win11-card);
+            padding: 1.8rem;
+            border-radius: var(--win11-radius);
+            border: 1px solid var(--win11-border);
+            backdrop-filter: blur(5px);
+            transition: var(--win11-transition);
+            box-shadow: var(--win11-shadow);
+        }
+        
+        .habilidade-categoria:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .habilidade-categoria h3 {
+            color: var(--win11-accent);
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.7rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            border-bottom: 1px solid var(--win11-border);
+        }
+        
+        .habilidade-categoria ul {
+            list-style: none;
+        }
+        
+        .habilidade-categoria li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.8rem;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .habilidade-categoria li::before {
+            content: '▹';
+            color: var(--win11-accent);
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+        
+        #servicos ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        #servicos li {
+            background: var(--win11-card);
+            padding: 1.8rem;
+            border-radius: var(--win11-radius);
+            border: 1px solid var(--win11-border);
+            backdrop-filter: blur(5px);
+            transition: var(--win11-transition);
+            position: relative;
+            padding-left: 2.5rem;
+            box-shadow: var(--win11-shadow);
+        }
+        
+        #servicos li:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        #servicos li::before {
+            content: '▹';
+            color: var(--win11-accent);
+            position: absolute;
+            left: 1.2rem;
+            font-size: 1.2rem;
+        }
+        
+        #portfolio .projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        #portfolio .projeto {
+            background: var(--win11-card);
+            padding: 1.8rem;
+            border-radius: var(--win11-radius);
+            border: 1px solid var(--win11-border);
+            backdrop-filter: blur(5px);
+            transition: var(--win11-transition);
+            box-shadow: var(--win11-shadow);
+        }
+        
+        #portfolio .projeto:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        #portfolio .projeto h3 {
+            color: var(--win11-accent);
+            margin-bottom: 0.8rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+        
+        #portfolio .projeto p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        #contato {
+            text-align: center;
+        }
+        
+        #contato p {
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.05rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 103, 192, 0.1) 100%);
+            color: var(--win11-text);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--win11-border);
+            backdrop-filter: blur(5px);
+        }
+        
+        footer p {
+            margin-bottom: 0.7rem;
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+        
+        footer p:first-child {
+            font-weight: 500;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 6rem 1.5rem 4rem;
+            }
+            
+            section {
+                padding: 4rem 1.5rem;
+            }
+            
+            .habilidades {
+                grid-template-columns: 1fr;
+            }
+            
+            #servicos ul {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            nav ul li {
+                margin: 0.2rem 0;
+            }
+            
+            nav ul li a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            section {
+                padding: 3.5rem 1.2rem;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .animate {
+            animation: slideUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Navegação principal">
+        <ul>
+            <li><a href="#sobre" aria-current="page">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Gustavo Durães de Lima</h1>
+        <h2>Técnico em Informática</h2>
+        <p>Soluções técnicas completas para seu computador, rede e desenvolvimento web básico.</p>
+        <a href="https://wa.me/5538984362090" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-13.38c-5.297 0-9.598 4.301-9.598 9.598 0 2.117.693 4.079 1.869 5.662L2.5 21.5l4.338-1.252a9.63 9.63 0 0 0 5.344 1.59c5.297 0 9.598-4.301 9.598-9.599 0-5.297-4.301-9.598-9.598-9.598z" fill="currentColor"/>
+            </svg>
+            Fale comigo no WhatsApp
+        </a>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá, eu sou Gustavo Durães de Lima, técnico em informática com habilidades diversificadas em hardware, software e desenvolvimento web. Minha abordagem combina conhecimento técnico sólido com atenção às necessidades específicas de cada cliente.</p>
+        <p>Com experiência prática em diversos aspectos da informática, ofereço soluções completas que vão desde a montagem e manutenção de computadores até configuração de redes e desenvolvimento de interfaces web simples.</p>
+        
+        <div class="habilidades">
+            <div class="habilidade-categoria">
+                <h3>Redes e Infraestrutura</h3>
+                <ul>
+                    <li>Configuração de cabos de rede (crimpar conectores RJ45)</li>
+                    <li>Instalação e configuração de roteadores</li>
+                    <li>Montagem de redes locais cabeadas e wireless</li>
+                    <li>Solução de problemas de conexão</li>
+                </ul>
+            </div>
+            
+            <div class="habilidade-categoria">
+                <h3>Hardware e Sistemas</h3>
+                <ul>
+                    <li>Formatação e instalação de sistemas operacionais</li>
+                    <li>Montagem e manutenção de computadores</li>
+                    <li>Substituição de componentes hardware</li>
+                    <li>Limpeza e manutenção preventiva</li>
+                </ul>
+            </div>
+            
+            <div class="habilidade-categoria">
+                <h3>Desenvolvimento e Software</h3>
+                <ul>
+                    <li>Conhecimento em front-end (HTML, CSS, JavaScript)</li>
+                    <li>Criação de páginas web responsivas</li>
+                    <li>Pacote Office (Word, Excel básico)</li>
+                    <li>Instalação e configuração de software</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="servicos">
+        <h2>Serviços Profissionais</h2>
+        <ul>
+            <li><strong>Configuração de redes</strong> cabeadas e wireless para residências e pequenos escritórios</li>
+            <li><strong>Instalação profissional</strong> de cabos de rede com conectores RJ45</li>
+            <li><strong>Formatação especializada</strong> e instalação de sistemas operacionais (Windows, Linux)</li>
+            <li><strong>Montagem personalizada</strong> de computadores de acordo com sua necessidade</li>
+            <li><strong>Desenvolvimento</strong> de páginas web simples e responsivas</li>
+            <li><strong>Manutenção preventiva</strong> e corretiva de computadores e notebooks</li>
+            <li><strong>Suporte técnico</strong> presencial e remoto com atendimento rápido</li>
+            <li><strong>Treinamentos personalizados</strong> de informática básica</li>
+            <li><strong>Configuração avançada</strong> de roteadores e solução de problemas de internet</li>
+            <li><strong>Otimização profissional</strong> de desempenho de computadores</li>
+        </ul>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Projetos Recentes</h2>
+        <div class="projetos">
+            <div class="projeto">
+                <h3>Implantação de Rede Local Residencial</h3>
+                <p>Configuração completa de rede cabeada para residência com 8 pontos de conexão, incluindo crimpagem de cabos, organização da infraestrutura e configuração do roteador para melhor desempenho.</p>
+            </div>
+            <div class="projeto">
+                <h3>Otimização de Rede Wireless</h3>
+                <p>Ajuste de roteador doméstico para melhor cobertura do sinal Wi-Fi, com configuração de canais menos congestionados e posicionamento estratégico do equipamento.</p>
+            </div>
+            <div class="projeto">
+                <h3>Site Pessoal Responsivo</h3>
+                <p>Desenvolvimento de página one-page responsiva para profissional liberal, com formulário de contato e integração com redes sociais.</p>
+            </div>
+            <div class="projeto">
+                <h3>Migração para SSD com Clonagem</h3>
+                <p>Substituição de HD mecânico por SSD em notebook empresarial, com clonagem completa do sistema operacional e dados, resultando em ganho significativo de performance.</p>
+            </div>
+            <div class="projeto">
+                <h3>Configuração de Roteador Empresarial</h3>
+                <p>Implementação de roteador TP-Link para pequeno escritório com configuração de QoS para priorizar tráfego de videoconferência e políticas de segurança básicas.</p>
+            </div>
+            <div class="projeto">
+                <h3>Treinamento de Informática Básica</h3>
+                <p>Aulas personalizadas para usuário iniciante, cobrindo desde operação básica do Windows até uso de pacote Office e navegação segura na internet.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Estou disponível para novos projetos, desde serviços técnicos até pequenos desenvolvimentos web. Entre em contato via WhatsApp para orçamentos ou dúvidas técnicas - respondo rapidamente!</p>
+        <a href="https://wa.me/5538984362090" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-13.38c-5.297 0-9.598 4.301-9.598 9.598 0 2.117.693 4.079 1.869 5.662L2.5 21.5l4.338-1.252a9.63 9.63 0 0 0 5.344 1.59c5.297 0 9.598-4.301 9.598-9.599 0-5.297-4.301-9.598-9.598-9.598z" fill="currentColor"/>
+            </svg>
+            Contato via WhatsApp
+        </a>
+    </section>
+    
+    <footer>
+        <p>Gustavo Durães de Lima - Técnico em Informática</p>
+        <p>Atendimento em Minas Gerais e região</p>
+        <p>© 2025 Gustavo Durães de Lima. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = (elements) => {
+                elements.forEach((el, i) => {
+                    setTimeout(() => {
+                        el.classList.add('animate');
+                    }, 150 * i);
+                });
+            };
+            
+            const headerElements = [
+                document.querySelector('header h1'),
+                document.querySelector('header h2'),
+                document.querySelector('header p'),
+                document.querySelector('header .whatsapp-btn')
+            ];
+            
+            headerElements.forEach(el => {
+                if (el) {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(20px)';
+                }
+            });
+            
+            animateElements(headerElements);
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('section, .habilidade-categoria, #servicos li, .projeto').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                observer.observe(el);
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        history.pushState(null, null, targetId);
+                        
+                        setTimeout(() => {
+                            targetElement.setAttribute('tabindex', '-1');
+                            targetElement.focus();
+                        }, 500);
+                    }
+                });
+            });
+            
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('nav ul li a');
+                
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= (sectionTop - 300)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    link.removeAttribute('aria-current');
+                    
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                        link.setAttribute('aria-current', 'page');
+                    }
+                });
+            });
+            
+            setTimeout(() => {
+                window.dispatchEvent(new Event('scroll'));
+            }, 100);
+        });
+    </script>
+</body>
+</html>
