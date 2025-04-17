@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gustavo Durães de Lima - Técnico em Informática especializado em manutenção de computadores, configuração de redes e desenvolvimento front-end. Serviços profissionais em Minas Gerais.">
-    <meta name="keywords" content="técnico informática, manutenção computadores, configuração redes, desenvolvimento web, suporte técnico, Minas Gerais">
+    <meta name="description" content="Gustavo Durães de Lima - Técnico em Informática especializado em desenvolvimento front-end, manutenção de computadores e configuração de redes. Serviços profissionais em Januária-MG.">
+    <meta name="keywords" content="desenvolvedor front-end, criação de sites, técnico informática, manutenção computadores, configuração redes, Januária">
     <meta name="author" content="Gustavo Durães de Lima">
-    <meta property="og:title" content="Gustavo Durães de Lima | Técnico em Informática">
-    <meta property="og:description" content="Soluções técnicas completas para seu computador, rede e desenvolvimento web básico.">
+    <meta property="og:title" content="Gustavo Durães de Lima | Desenvolvedor Front-end e Técnico em Informática">
+    <meta property="og:description" content="Criação de sites profissionais e soluções técnicas para computadores e redes em Januária-MG.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <link rel="canonical" href="https://seudominio.com.br">
-    <title>Gustavo Durães de Lima | Técnico em Informática - Manutenção e Redes</title>
+    <title>Gustavo Durães de Lima | Desenvolvedor Front-end e Técnico em Informática - Januária-MG</title>
     
     <style>
         :root {
@@ -110,6 +110,25 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             outline: none;
+        }
+        
+        .projeto-btn {
+            display: inline-block;
+            background: var(--win11-primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--win11-radius);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--win11-transition);
+            margin-top: 1rem;
+            border: 1px solid var(--win11-border);
+        }
+        
+        .projeto-btn:hover, .projeto-btn:focus {
+            background: var(--win11-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
         nav {
@@ -288,6 +307,9 @@
             backdrop-filter: blur(5px);
             transition: var(--win11-transition);
             box-shadow: var(--win11-shadow);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         #portfolio .projeto:hover {
@@ -306,6 +328,8 @@
             font-size: 0.95rem;
             line-height: 1.7;
             opacity: 0.9;
+            flex-grow: 1;
+            margin-bottom: 1rem;
         }
         
         #contato {
@@ -405,15 +429,15 @@
         <ul>
             <li><a href="#sobre" aria-current="page">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
     
     <header>
         <h1>Gustavo Durães de Lima</h1>
-        <h2>Técnico em Informática</h2>
-        <p>Soluções técnicas completas para seu computador, rede e desenvolvimento web básico.</p>
+        <h2>Desenvolvedor Front-end e Técnico em Informática</h2>
+        <p>Criação de sites profissionais e soluções técnicas para computadores e redes em Januária-MG.</p>
         <a href="https://wa.me/5538984362090" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-13.38c-5.297 0-9.598 4.301-9.598 9.598 0 2.117.693 4.079 1.869 5.662L2.5 21.5l4.338-1.252a9.63 9.63 0 0 0 5.344 1.59c5.297 0 9.598-4.301 9.598-9.599 0-5.297-4.301-9.598-9.598-9.598z" fill="currentColor"/>
@@ -424,10 +448,21 @@
     
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Olá, eu sou Gustavo Durães de Lima, técnico em informática com habilidades diversificadas em hardware, software e desenvolvimento web. Minha abordagem combina conhecimento técnico sólido com atenção às necessidades específicas de cada cliente.</p>
-        <p>Com experiência prática em diversos aspectos da informática, ofereço soluções completas que vão desde a montagem e manutenção de computadores até configuração de redes e desenvolvimento de interfaces web simples.</p>
+        <p>Olá, eu sou Gustavo Durães de Lima, técnico em informática com especialização em desenvolvimento front-end. Minha paixão por criar sites bonitos e funcionais se combina com habilidades técnicas em hardware e redes para oferecer soluções completas.</p>
+        <p>Com experiência prática em diversas áreas da tecnologia, ofereço desde a criação de sites responsivos até manutenção de computadores e configuração de redes, sempre com atenção às necessidades específicas de cada cliente em Januária.</p>
         
         <div class="habilidades">
+            <div class="habilidade-categoria">
+                <h3>Desenvolvimento Front-end</h3>
+                <ul>
+                    <li>Criação de sites responsivos e modernos</li>
+                    <li>HTML5, CSS3 e JavaScript</li>
+                    <li>Design de interfaces intuitivas</li>
+                    <li>Otimização para motores de busca (SEO básico)</li>
+                    <li>Integração com redes sociais</li>
+                </ul>
+            </div>
+            
             <div class="habilidade-categoria">
                 <h3>Redes e Infraestrutura</h3>
                 <ul>
@@ -447,32 +482,21 @@
                     <li>Limpeza e manutenção preventiva</li>
                 </ul>
             </div>
-            
-            <div class="habilidade-categoria">
-                <h3>Desenvolvimento e Software</h3>
-                <ul>
-                    <li>Conhecimento em front-end (HTML, CSS, JavaScript)</li>
-                    <li>Criação de páginas web responsivas</li>
-                    <li>Pacote Office (Word, Excel básico)</li>
-                    <li>Instalação e configuração de software</li>
-                </ul>
-            </div>
         </div>
     </section>
     
     <section id="servicos">
         <h2>Serviços Profissionais</h2>
         <ul>
+            <li><strong>Criação de Sites</strong> responsivos e modernos para pequenos negócios e profissionais</li>
+            <li><strong>Desenvolvimento Front-end</strong> com HTML, CSS e JavaScript</li>
+            <li><strong>Landing Pages</strong> eficientes para captação de clientes</li>
+            <li><strong>Sites One-Page</strong> para divulgação de serviços</li>
             <li><strong>Configuração de redes</strong> cabeadas e wireless para residências e pequenos escritórios</li>
             <li><strong>Instalação profissional</strong> de cabos de rede com conectores RJ45</li>
             <li><strong>Formatação especializada</strong> e instalação de sistemas operacionais (Windows, Linux)</li>
-            <li><strong>Montagem personalizada</strong> de computadores de acordo com sua necessidade</li>
-            <li><strong>Desenvolvimento</strong> de páginas web simples e responsivas</li>
             <li><strong>Manutenção preventiva</strong> e corretiva de computadores e notebooks</li>
-            <li><strong>Suporte técnico</strong> presencial e remoto com atendimento rápido</li>
-            <li><strong>Treinamentos personalizados</strong> de informática básica</li>
-            <li><strong>Configuração avançada</strong> de roteadores e solução de problemas de internet</li>
-            <li><strong>Otimização profissional</strong> de desempenho de computadores</li>
+            <li><strong>Suporte técnico</strong> presencial em Januária com atendimento rápido</li>
         </ul>
     </section>
     
@@ -480,35 +504,15 @@
         <h2>Projetos Recentes</h2>
         <div class="projetos">
             <div class="projeto">
-                <h3>Implantação de Rede Local Residencial</h3>
-                <p>Configuração completa de rede cabeada para residência com 8 pontos de conexão, incluindo crimpagem de cabos, organização da infraestrutura e configuração do roteador para melhor desempenho.</p>
+                <h3>Guia Turístico de Nas Cavernas do Peruaçu</h3>
+                <p>Criei um site de uma página para divulgar o trabalho do guia de turismo Diego Dias, que faz passeios nas cavernas do Parque Nacional Cavernas do Peruaçu, em Minas Gerais. Usei HTML, CSS e JavaScript, deixando o site leve, fácil de navegar e com botão direto pro WhatsApp. O objetivo foi mostrar as belezas naturais da região e facilitar o contato com os turistas.                </p>
+                <a href="https://diegoguiadeturismo.github.io/peruacu/" target="_blank" rel="noopener noreferrer" class="projeto-btn">Ver Projeto</a>
             </div>
-            <div class="projeto">
-                <h3>Otimização de Rede Wireless</h3>
-                <p>Ajuste de roteador doméstico para melhor cobertura do sinal Wi-Fi, com configuração de canais menos congestionados e posicionamento estratégico do equipamento.</p>
-            </div>
-            <div class="projeto">
-                <h3>Site Pessoal Responsivo</h3>
-                <p>Desenvolvimento de página one-page responsiva para profissional liberal, com formulário de contato e integração com redes sociais.</p>
-            </div>
-            <div class="projeto">
-                <h3>Migração para SSD com Clonagem</h3>
-                <p>Substituição de HD mecânico por SSD em notebook empresarial, com clonagem completa do sistema operacional e dados, resultando em ganho significativo de performance.</p>
-            </div>
-            <div class="projeto">
-                <h3>Configuração de Roteador Empresarial</h3>
-                <p>Implementação de roteador TP-Link para pequeno escritório com configuração de QoS para priorizar tráfego de videoconferência e políticas de segurança básicas.</p>
-            </div>
-            <div class="projeto">
-                <h3>Treinamento de Informática Básica</h3>
-                <p>Aulas personalizadas para usuário iniciante, cobrindo desde operação básica do Windows até uso de pacote Office e navegação segura na internet.</p>
-            </div>
-        </div>
     </section>
     
     <section id="contato">
         <h2>Entre em Contato</h2>
-        <p>Estou disponível para novos projetos, desde serviços técnicos até pequenos desenvolvimentos web. Entre em contato via WhatsApp para orçamentos ou dúvidas técnicas - respondo rapidamente!</p>
+        <p>Estou disponível para novos projetos de desenvolvimento web e serviços técnicos em Januária. Entre em contato via WhatsApp para orçamentos ou dúvidas - respondo rapidamente!</p>
         <a href="https://wa.me/5538984362090" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-13.38c-5.297 0-9.598 4.301-9.598 9.598 0 2.117.693 4.079 1.869 5.662L2.5 21.5l4.338-1.252a9.63 9.63 0 0 0 5.344 1.59c5.297 0 9.598-4.301 9.598-9.599 0-5.297-4.301-9.598-9.598-9.598z" fill="currentColor"/>
@@ -518,8 +522,8 @@
     </section>
     
     <footer>
-        <p>Gustavo Durães de Lima - Técnico em Informática</p>
-        <p>Atendimento em Minas Gerais e região</p>
+        <p>Gustavo Durães de Lima - Desenvolvedor Front-end e Técnico em Informática</p>
+        <p>Atendimento em Januária-MG</p>
         <p>© 2025 Gustavo Durães de Lima. Todos os direitos reservados.</p>
     </footer>
     
